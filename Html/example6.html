@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		//function getValue(){
+		 	//emp= {id:102, name:"Jhon Doe", salary:40000 }
+		 	// document.write(emp.id+" "+emp.name+" "+emp.salary);
+		 	//var emp = new Object();
+
+		 	//emp.id =103 ;
+		 	//emp.name="Jhon Simon";
+		 	//emp.salary=50000;
+		 	//document.write( emp.id+ " "+emp.name+" "+emp.salary);
+		// }
+
+		 	function emp(id,name,salary){
+		 		this.id=id;
+		 		this.name=name;
+		 		this.salary=salary;
+		 	}
+		 	function getEmpValue(){
+		 		e = new emp(103,"Ashutosh",30000);
+		 		document.write(e.id+" "+e.name+" "+e.salary);
+		 	}
+		
+	</script>
+	<!--<input type="button" onclick="getValue()" value="Get value"/> -->
+		<input type="button" onclick="getEmpValue()" value="Get Employee value"/>
+
+</body>
+</html>

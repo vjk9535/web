@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+            
+        }
+        #sp,#yp {
+            width:100%;
+        }
+        </style>
+    </head>
+    <body>
+        <form action="thanks.html" method ="GET">
+            <table class="pDetail" border ="border" style="float: left">
+                <tr>
+                <th>Personal Details</th>
+                </tr>
+                <tr>
+            <td><p>First Name:<input type="text" name="fname"/></p>
+           <p>Last Name:<input type="text"/></p>
+            <p>DOB:<input type="date"/></p>
+            <p>Gender:<select name="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select></p></td>
+        </tr>
+            <tr>
+            <th>Qualification</th>
+            </tr>
+            <tr>
+                    <td>
+                        <p> University&emsp;&emsp;: <input type="text"/></p>
+                    <p > College Name&nbsp;:<input type="text"/></p>
+                    <p id="py">Passing Year&emsp;:<input type="number" min="2000" max="2019" step="1" value="2019" /></p>
+                    <p id="sp">Specilization&ensp;&nbsp;:<select name="s" >
+                        <option>None</option>
+                        <option>Computer Science</option>
+                        <option>Electrical</option>
+                    </select></p></td>
+        </tr>
+        </table>
+        </form>
+    </body>
+</html>

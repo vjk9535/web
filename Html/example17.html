@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!-- static method-->
+<html>
+    <body>
+        <script>
+        class IBM {
+            static display(){//static function
+                return "static method is invoked"
+            }
+        }
+        function getValue(){
+            document.writeln(IBM.display());
+        }
+        </script>
+        <input type="button" onclick="getValue()" value="Get Value"/><br/>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- Poly Morphism-->
+<html>
+    <body>
+        <script>
+        class Manager1 {
+            display() {
+                document.writeln("Manager class is invoked <br>")
+            }
+        }
+        class Employee1 extends Manager1{
+            display() {//function Override
+                document.writeln("Employee class is invoked <br>")
+            }
+        }
+        function getValue(){
+            var obj = new Employee1();
+            obj.display();
+        }
+        </script>
+        <input type="button" onclick="getValue()" value="Get value"/> <br/>
+    </body>
+</html>

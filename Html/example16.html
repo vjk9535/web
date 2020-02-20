@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+        class Manager { //Parent class
+         constructor(){ //parent class constructor
+             this.company = "IBM";
+         }
+         }
+         class Employee extends Manager {//child class
+             constructor (id,name){ //child class constructor
+                 super(); //calling parent class constructor 
+                 
+                 this.id = id;
+                 this.name = name ;
+             }
+         }
+         function getValue(){
+             var emp = new Employee(1,"Jhon");
+             var emp1 = new Employee(2,"Ashutosh");
+             
+             document.writeln(emp.id+" "+emp.name + " "+emp.company+ "<br>");
+             document.writeln(emp1.id+" "+emp1.name + " "+emp1.company);
+         }
+             </script>
+             <input type="button" onclick="getValue()" value="Get Value"/> <br/>
+    </body>
+</html>

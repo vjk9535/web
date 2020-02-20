@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First jQuery Example</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        </script>
+    
+    <script type="text/javascript" language="javascript">
+
+    $(function(){
+        $("#hide").click(function(){
+            $("#text").hide();
+        });
+        $("#show").click(function(){
+            $("#text").show();
+        });
+    });
+    </script>
+    
+    </head>
+    <body>
+<button id="hide">HIDE</button> &nbsp; &nbsp;   <button id="show">SHOW</button>
+<div id="text">This is Hide & Show Example</div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+        function getValue(){
+            var today = new Date();
+            document.getElementById('txt').innerHTML = today ;
+            var date = new Date();
+            var day = date.getDate();
+            var month= date.getMonth()+1;
+            var year= date.getFullyear();
+            document.write("<br>Date is:"+month+"/"+day+"/"+year);
+            //var h= today.getHours();
+           // var m=today.getMinutes();
+            //var s=today.getMinutes();
+
+            document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+        }
+            </script>
+            <input type="button" onclick="getValue()" value="Get Date"/><br/>
+            Current Date and Time : <span id="txt"></span> </body> </br>
+    </body>
+</html>

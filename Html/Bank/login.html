@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        #h:hover {
+                        background-color: rgb(40, 158, 11);
+                   
+        }
+        .card {
+            height:800px;
+           
+            box-shadow: 0 1px 0 1px rgb(255, 255, 255);
+            transition: 0.3s;
+        }
+        .card-body {
+                padding-right: 0px;
+                padding-left: 0px;
+                 padding-top: 80px;
+        }
+.navbar {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+#h{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+}
+#sen {
+    font-size: 12px;
+    padding:10px 0 0 10px;
+}
+#t1 {
+    padding:5px 0 0 10px;
+}
+.t2 {
+    padding-right: 40px;
+    padding-left: 20px;
+}
+input {
+    background-color:rgb(243, 241, 241);
+}
+#t3 {
+    color:grey;
+    font-size: 13px;
+    padding-top: 10px;
+}
+#d1 ,#r1{
+    padding-left: 20px;
+    width:250px;
+    height: 30px;
+  
+}
+.flex-container{
+    display:flex;
+    flex-wrap:nowrap;
+    
+}
+
+.flex-container .box {
+    float:left;
+    font-size: 13px;
+}
+#d2 {
+    padding-top: 20px;
+    padding-right: 100px;
+    
+   /*padding-left: 40px;*/
+   
+}
+#d3 {
+    border:rgb(20, 201, 35) solid 2px;
+    height:50px;
+    width:200px;
+    padding: 10px 10px 12px 5px;
+    padding-left: 10px;
+   
+}
+
+.box1 > p:nth-child(1) > img:nth-child(1) {
+
+  margin-top: -44px;
+}
+/* #d4{
+    border-left: 1px solid grey;
+  border-left-width: 2px; 
+  padding-left: -30px;
+  margin-left: 604px;
+  line-height: 400px;
+} */
+/* #d5 {
+    border-left: 1px solid rgb(211, 209, 209);
+    line-height: 199px;
+  margin-top: -16px;
+  margin-left: 606px;
+  padding-top: -10px;
+  
+} */
+#d3 {
+    color:green;
+}
+#t4, #t7 {
+     height:30px;
+     width: 70px;
+     background-color:rgb(24, 221, 50);
+     color:white;
+     font-size: 15px;
+     font-weight: bold;
+}
+#m1 {
+    padding-left: 20px;
+}
+#t5 {
+    padding-left: 20px;
+}
+#t6 {
+
+    padding-left: 20px;
+}
+a {
+    color:green;
+}
+    </style>
+    <script>
+
+
+        
+                function GFG_Fun(){
+                    var Flname = document.getElementById("d1").value;
+               var pwname = document.getElementById("r1").value;
+                if( Flname == "vijay" && pwname == "kumar") {
+                    // alert("LOgin success!!!");
+                    
+                   
+                     return true;
+                     
+                            
+                }
+                else
+                {
+                    
+                    alert("Invalid Credential!!!");
+                    return false;
+                    // value=0;
+                    }
+                }
+                function getValue(){
+                    var py = document.getElementById("t8").value; 
+                    var down ; 
+                    
+  
+                    down = 
+                     Math.random().toString(36).slice(2);
+                     Flname = down;
+                    if(Flname == py)
+                    {
+                        alert("Login SuccessFull!!!");
+                    }else {
+                        alert("Wrong PrivateKey!!!");
+                    }
+                }
+                          
+                        
+                          
+                
+                $(function(){
+                    $("#t7,#t8,#t5").hide();
+                    // $('#t7').prop('disabled',true);
+                    //         $('#t8').prop('disabled',true);
+                    $("#t4").click(function(){
+                        
+                        if(GFG_Fun(Boolean)) {
+                            $("#t7,#t8,#t5").show();
+                            // $('#t7').prop("disabled", false);
+                            // $('#t8').prop("disabled",false);
+                        }else {
+                            $("#t7,#t8,#t5").hide();
+                            // $('#t7').prop('disabled',true);
+                            // $('#t8').prop('disabled',true);
+                        }
+                                
+                    });
+                });
+    </script>
+    <body>
+            <div class="flex-container">
+                    <div class="container">
+                      <div class="card">
+                        <div class="card-body" >
+        <nav class="navbar navbar-expand-sm  bg-success navbar-dark" >
+            <ul class="navbar-nav">
+                <li class="nav-item" id="h">
+                    <a class="nav-link" href="#" style="color:white"><b>About Us</b></a>
+                </li>
+                <!-- <li class="nav-item " id="h">
+                    <a class="nav-link" href="#" style="color:white"><b>Product & Services</b></a>
+                </li>
+                <li class="nav-item " id="h">
+                    <a class="nav-link" href="#" style="color:white"><b>How Do I</b></a>
+                </li> -->
+            </ul>
+        </nav>
+        <nav class="navbar navbar-expand-sm  bg-light navbar-dark" >
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <p  id="t1" style="color:green;font-size: 13px;"><b>Login to <marquee behavior="alternate" width="1000px">BitSiBank</marquee></b></p>
+                    </li>
+                   
+                </ul>
+            </nav>
+            <p id="sen">(<b style="color:red">CARE</b>: Username and password are case sensitive.)</p>
+            <form  action=""  >
+            <div class="box"><p class="t2">&nbsp;&nbsp;&nbsp;<b id="t3">Username*</b><br>
+       <input id="d1" type="text"/><br><br>
+      &nbsp;&nbsp;&nbsp;<b id="t3">Password*</b><br>
+       <input id="r1" type="password" /></p>
+   <p id="m1"> <input type="button" name="login" id="t4" value="Login" onclick="GFG_Fun()"/>
+    <input type="reset" id="t4" value="Reset"/></p>
+    <p id="t5"><i style="color:red">Private Key Sent to Your Registered EmailId</i></br>
+   <input type="file" name=txt id="t8"  /><br>
+        <p id="t6"><input type="button" name="up" id= "t7" value="Upload" onclick="GFG_Fun(getValue())" />
+    </p>
+</p>
+    </div>
+    </form>
+       <div class="box" ><p id="d2"><a href="#">New User? Register here/Activate</a>
+           <br><br><a href="#">Forgot Login Password</a><br>
+           <p id="d3" ><marquee behaviour="scroll" direction="up" style="height:30px" scrollamount="1">Bachat Zada Kharche Kam<br>Apna Bank "BitSiBank"</marquee></p>
+        </p>
+    </div>
+    <div class="box1">
+        <p>
+        <img src="/home/vijay/Desktop/img4.jpg" alt="" height="270px" width="500px">
+        </p> 
+    </div>
+
+    <p id="GFG_DOWN" 
+       style="color: green; 
+              font-size: 24px;  
+              font-weight: bold;"> 
+    </p> 
+        </div>
+        </div>
+        </div>
+            
+        
+        </div> 
+           
+    </body>
+</html>

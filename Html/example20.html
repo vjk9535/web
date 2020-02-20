@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--Encapsulation - It is the mechanism that binds together code and the data it manipulates-->
+<html>
+    <body>
+        <script>
+        class Employee { 
+            constructor(){
+                var name ;
+                var company;
+            }
+            getName() {
+                return this.name;
+            }
+            setName(name) {
+                this.name=name;
+            }
+            getCompany(){
+                return this.company;
+            }
+            setCompany(company){
+                this.company=company;
+            }
+        }
+        function getValue(){
+            var obj = new Employee();
+
+            obj.setName("Alice");
+            obj.setCompany("Oracle");
+             
+             var obj1 = new Employee();
+             obj1.setName("Bob");
+             obj1.setCompany("IBM");
+
+             document.writeln(obj.getName() + " " + obj.getCompany() + "<br>");
+             document.writeln(obj1.getName() + " " + obj1.getCompany() + "<br>");
+        }
+        </script>
+        <input type="button" onclick="getValue()" value="Get Value"/><br/>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+        class Employee {
+            constructor(){
+            this.id = 101;
+            this.name = "bob" ;
+            }
+        }
+        function getValue(){
+            var emp = new Employee();
+            document.writeln(emp.id+" "+emp.name);
+        }
+        </script>
+        <input type="button" onclick="getValue()" value="Get Value"/> <br/>
+    </body>
+</html>

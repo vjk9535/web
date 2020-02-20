@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            class IBM {
+                constructor() {
+                    document.writeln(this.constructor.display());
+                }
+                static display() {
+                    return "static method is invoked"
+                }
+            }
+            function getValue() {
+                var emp = new IBM();
+
+            }
+        </script>
+        <input type="button" onclick="getValue()" value="Get Value"/> <br/>
+    </body>
+</html>

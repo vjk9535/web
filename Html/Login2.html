@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+            </script>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <style>
+            #log {
+                position: absolute;
+                left:35%;
+                border:2px solid black;
+                padding:10px 100px 10px 10px;
+                background-color: darkgrey;
+            }
+            #sig {
+                position: absolute;
+                right:39.5%;
+                border:2px solid black;
+                padding:10px 10px 10px 100px;
+                background-color: darkgrey;
+            }
+            #un,#ps,#em{
+                
+                font-family: "fontawesome";
+                padding:10px 0px 10px 0px; 
+                
+            }
+            p {
+                padding:100px 500px 0px 470px; 
+            }
+            #lo {
+                
+                padding:0px 500px 0px 470px;
+                
+            }
+            #si {
+                
+                padding:0px 500px 0px 470px;
+                
+            }
+            #lo1{
+                height:40px;
+                width:290px;
+                background-color:rgb(192, 189, 189);
+                color:white;
+            }
+            #lo1:hover{
+                height:40px;
+                width:290px;
+                background-color: rgb(141, 136, 136);
+                color:white;
+            }
+            #si1{
+                height:40px;
+                width:290px;
+                background-color:rgb(192, 189, 189);
+                color:white;
+            }
+            #si1:hover{
+                height:40px;
+                width:290px;
+                background-color: rgb(141, 136, 136);
+                color:white;
+            }
+        </style>
+        <script>
+            $(function(){
+                $("#si").hide();
+                $("#em").hide();
+                $("#sig").fadeTo("fast",0.15);
+                $("#log").click(function(){
+                    $("#sig").fadeTo("slow",0.15);
+                    $(this).fadeTo("slow",1);
+                    $("#lo").show();
+                    $("#si").hide();
+                    $("#em").hide();
+                    
+
+                });
+
+                $("#sig").click(function(){
+                    $("#log").fadeTo("show",0.15);
+                    $(this).fadeTo("slow",1);
+                    $("#si").show();
+                    $("#lo").hide();
+                    $("#em").show();
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        
+        <div><p id="log">Login</p><p id="sig">SignUp</p></div>
+        <div class="flex-container">
+            <div class="container">
+              <div class="card">
+                <div class="card-body">
+            <p><input type="text" id="un" onfocus="this.value=' '" placeholder="&#xf007; Username"  value="Username"/><!--</p> -->
+            <!-- <p>--><input type="password" id="ps" placeholder="&#xf023; Password" />  
+            <input type="text" id="em" placeholder="&#xf0e0; Email@xyz.com"/>
+            <p id="lo"><input type="button" value="Login" id="lo1" /></p><p id="si"><input id="si1" type="button" value="SignUp" /></p></p>
+            <p style="color:red"><i>Private key sent to register EmailId</i></p>
+            <input type="file" name="txtf"/><input type="submit" value="Upload"/> 
+</div>
+</div>
+</div>
+</div>
+    </body>
+</html>

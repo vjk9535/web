@@ -1,0 +1,35 @@
+
+<!DOCTYPE HTML> 
+<html> 
+  
+<head> 
+    <title> 
+      Generate random alpha-numeric string 
+      in JavaScript 
+    </title> 
+</head> 
+  
+<body style="text-align:center;" 
+      id="body"> 
+    
+    <button onClick="GFG_Fun()"> 
+        click here 
+    </button> 
+    <p id="GFG_DOWN" 
+       style="color: green; 
+              font-size: 24px;  
+              font-weight: bold;"> 
+    </p> 
+    <script> 
+        
+        var down = document.getElementById('GFG_DOWN');  
+  
+        function GFG_Fun() { 
+            down.innerHTML = 
+              Math.random().toString(36).slice(2); 
+        } 
+        
+    </script> 
+</body> 
+  
+</html> 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //declaring class
+    class Employee {
+
+        //Initializing an object
+        constructor(id,name)
+        {
+            this.id = id;
+            this.name =  name ;
+        }
+        detail()
+        {
+            document.writeln(this.id+ " " + this.name + "<br/>")
+        }
+    }
+     function getValue()
+     {
+         //Here , we are invoking the class before declaring it.
+         var obj1 = new Employee(101, " John");
+         var obj2 = new Employee(102, " Doe ");
+         obj1.detail();//calling method
+         obj2.detail();
+     }
+     </script>
+     <input type="button" onclick="getValue()" value="Get value" /> <br/>
+    </body>
+</html>
